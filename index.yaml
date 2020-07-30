@@ -1,0 +1,173 @@
+apiVersion: v1
+entries:
+  consul:
+  - apiVersion: v1
+    appVersion: 1.5.3
+    created: "2020-07-30T17:22:41.295644562-05:00"
+    description: Highly available and distributed service discovery and key-value
+      store designed with support for the modern data center to make distributed systems
+      and configuration easy.
+    digest: 7865abc55364ae0523bcd79fb957955fd5aceeccadcf7e44cf43de93bae132c6
+    home: https://github.com/hashicorp/consul
+    icon: https://raw.githubusercontent.com/hashicorp/consul/bce3809dfca37b883828c3715b84143dd71c0f85/website/source/assets/images/favicons/android-chrome-512x512.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    name: consul
+    sources:
+    - https://github.com/kelseyhightower/consul-on-kubernetes
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/consul-3.9.4/consul-3.9.4.tgz
+    version: 3.9.4
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: "2020-07-30T17:22:41.375419733-05:00"
+    description: Open source continuous integration server. It supports multiple SCM
+      tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
+      Maven-based projects as well as arbitrary scripts.
+    digest: 24ef5d74daafcf881cc87b533b41c0163a0bba957dfca86c8fcadcdc2cdc506a
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    - email: viglesias@google.com
+      name: viglesiasce
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/jenkins-1.10.0/jenkins-1.10.0.tgz
+    version: 1.10.0
+  metallb:
+  - apiVersion: v1
+    appVersion: 0.8.1
+    created: "2020-07-30T17:22:41.459852374-05:00"
+    description: MetalLB is a load-balancer implementation for bare metal Kubernetes
+      clusters
+    digest: bd6b10142cd4302a46828e9bb3a086fc882f1130be771df912378ccd1a2fd326
+    home: https://metallb.universe.tf
+    icon: https://metallb.universe.tf/images/logo.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    maintainers:
+    - email: dave@natulte.net
+      name: danderson
+    name: metallb
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/metallb-0.12.0/metallb-0.12.0.tgz
+    version: 0.12.0
+  metrics-server:
+  - apiVersion: v1
+    appVersion: 0.3.6
+    created: "2020-07-30T17:22:41.548404171-05:00"
+    description: Metrics Server is a cluster-wide aggregator of resource usage data.
+    digest: 7e4fbc3ff960de4da5e2effcf63f3a3aa4afb025359589eef21cac33972c8959
+    home: https://github.com/kubernetes-incubator/metrics-server
+    keywords:
+    - metrics-server
+    maintainers:
+    - email: o.with@sportradar.com
+      name: olemarkus
+    - email: k.aasan@sportradar.com
+      name: kennethaasan
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-incubator/metrics-server
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/metrics-server-2.8.9/metrics-server-2.8.9.tgz
+    version: 2.8.9
+  nexus:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-07-30T17:22:41.631542154-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 62b04a8cf83968146dca5ab1797e14e6e143d12b402ad08291f7cc788096833e
+    name: nexus
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/nexus-0.1.0/nexus-0.1.0.tgz
+    version: 0.1.0
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2020-07-30T17:22:41.881473095-05:00"
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: c33e2366c4070403f016f9e5d38bc61bded4f0d060843a5a7bc3fc69dc77a28c
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: devopnetfl@gmail.com
+      name: florin
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/nfs-client-provisioner-1.2.8/nfs-client-provisioner-1.2.8.tgz
+    version: 1.2.8
+  nginx-ingress:
+  - apiVersion: v1
+    appVersion: 0.26.2
+    created: "2020-07-30T17:22:41.966613643-05:00"
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: 61c77ac650325fa5d109adcf0abf30b2408b952853efb15e52d0a70deb2d4136
+    engine: gotpl
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.10.0-0'
+    maintainers:
+    - name: ChiefAlexander
+    - email: Trevor.G.Wood@gmail.com
+      name: taharah
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/nginx-ingress-1.28.2/nginx-ingress-1.28.2.tgz
+    version: 1.28.2
+  prometheus:
+  - apiVersion: v1
+    appVersion: 2.15.2
+    created: "2020-07-30T17:22:42.043471362-05:00"
+    description: Prometheus is a monitoring system and time series database.
+    digest: 4769e3d8859baeb83f7b0c63a2f5344be181e69dfb252636af83d0718cc89a7e
+    engine: gotpl
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: devopsfl@gmail.com
+      name: florin
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    tillerVersion: '>=2.8.0'
+    urls:
+    - https://github.com/florinen/omegnet_charts/releases/download/prometheus-10.0.1/prometheus-10.0.1.tgz
+    version: 10.0.1
+generated: "2020-07-30T17:22:40.936317186-05:00"
